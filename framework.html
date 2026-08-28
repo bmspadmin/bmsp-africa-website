@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BMsP AFRICA — The Framework</title>
+<meta name="description" content="The BMsP AFRICA framework: Discover, Develop, Create, Impact.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F9F7F2;--paper-dim:#F1ECE0;--ink:#1C1B17;--ink-soft:#4A473E;--indigo:#1B2440;--indigo-soft:#2B3555;--gold:#E3A530;--gold-soft:#F0C878;--clay:#B7472A;--line:rgba(28,27,23,.12);--maxw:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,sans-serif;line-height:1.6}img{max-width:100%;display:block}.wrap{max-width:var(--maxw);margin:auto;padding:0 32px}
+h1,h2,h3{font-family:Fraunces,serif;font-weight:600;letter-spacing:-.01em;margin:0}.eyebrow{font:12px 'Space Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--clay);display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";width:22px;height:1px;background:var(--clay)}
+header{position:sticky;top:0;z-index:20;background:rgba(249,247,242,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{max-width:var(--maxw);margin:auto;padding:14px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{width:190px;height:54px;display:block}.brand img{width:100%;height:100%;object-fit:contain;object-position:left center}.back{font-weight:600;text-decoration:none;color:var(--indigo);border-bottom:1px solid var(--clay);padding-bottom:2px}
+.hero{background:var(--indigo);color:var(--paper);padding:110px 0 90px;overflow:hidden}.hero .eyebrow{color:var(--gold-soft)}.hero .eyebrow:before{background:var(--gold-soft)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}.hero h1{font-size:clamp(44px,6vw,76px);line-height:1.02;margin:20px 0}.hero h1 em{color:var(--gold-soft)}.hero p{max-width:56ch;color:rgba(249,247,242,.72);font-size:18px}
+.framework-wheel{height:390px;position:relative;display:grid;place-items:center}.ring{position:absolute;border:1px solid rgba(240,200,120,.3);border-radius:50%}.r1{width:340px;height:340px}.r2{width:250px;height:250px;border-color:rgba(183,71,42,.45)}.core{width:138px;height:138px;border-radius:50%;background:var(--gold);color:var(--indigo);display:grid;place-content:center;text-align:center;font:600 25px/1.05 Fraunces;box-shadow:0 0 0 18px rgba(227,165,48,.08)}.wheel-node{position:absolute;font:10px 'Space Mono',monospace;text-transform:uppercase;letter-spacing:.08em}.wheel-node b{display:block;color:var(--gold-soft);margin-bottom:3px}.wn1{top:12px;left:7%}.wn2{top:92px;right:0}.wn3{bottom:20px;right:10%}.wn4{bottom:85px;left:0}
+section{padding:92px 0}.intro{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}.intro h2{font-size:clamp(30px,4vw,48px);line-height:1.08}.intro p{color:var(--ink-soft);max-width:62ch}
+.pillars{background:var(--paper-dim)}.pillar{display:grid;grid-template-columns:.95fr 1.05fr;gap:56px;align-items:center;padding:58px 0;border-bottom:1px solid var(--line)}.pillar:first-child{padding-top:0}.pillar:nth-child(even){grid-template-columns:1.05fr .95fr}.pillar:nth-child(even) .pillar-media{order:-1}.pillar-copy .num{font:12px 'Space Mono',monospace;color:var(--clay);letter-spacing:.1em}.pillar-copy h2{font-size:clamp(30px,4vw,50px);margin:12px 0}.pillar-copy .question{font:italic 18px Fraunces;color:var(--clay);margin-bottom:12px}.pillar-copy p{color:var(--ink-soft);max-width:54ch}.pillar-list{margin:24px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}.pillar-list li{padding:12px 14px;background:var(--paper);border-left:2px solid var(--gold);font-size:13px}.pillar-media{position:relative}.pillar-media img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:2px;filter:saturate(.9)}.media-label{position:absolute;left:18px;bottom:18px;background:var(--indigo);color:var(--paper);padding:10px 13px;font:10px 'Space Mono',monospace;text-transform:uppercase;letter-spacing:.08em}
+.chain{background:var(--indigo);color:var(--paper)}.chain .eyebrow{color:var(--gold-soft)}.chain .eyebrow:before{background:var(--gold-soft)}.chain h2{font-size:clamp(30px,4vw,48px);margin-top:16px}.chain p{color:rgba(249,247,242,.68);max-width:60ch}.chain-row{display:grid;grid-template-columns:repeat(4,1fr);margin-top:54px}.chain-step{padding:26px;border-top:2px solid rgba(249,247,242,.18);border-right:1px solid rgba(249,247,242,.12)}.chain-step:last-child{border-right:0;border-top-color:var(--gold)}.chain-step span{font:11px 'Space Mono',monospace;color:var(--gold-soft)}.chain-step h3{font-size:23px;margin:14px 0 6px}.chain-step p{font-size:13px}
+.horizon-section{background:var(--paper-dim)}.horizon-title{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end}.horizon-title h2{font-size:clamp(36px,5vw,64px);line-height:.98}.horizon-title h2 em{color:var(--clay)}.horizon-title p{color:var(--ink-soft)}.targets{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);margin-top:55px}.target{background:var(--paper);padding:42px 30px;min-height:260px;position:relative;overflow:hidden}.target:after{content:"";position:absolute;width:160px;height:160px;border:1px solid var(--gold);border-radius:50%;right:-70px;bottom:-70px;opacity:.45}.target small{font:10px 'Space Mono',monospace;letter-spacing:.1em;color:var(--clay);text-transform:uppercase}.target strong{display:block;font:600 clamp(46px,6vw,72px) Fraunces;color:var(--indigo);margin:10px 0}.target h3{font-size:20px}.target p{color:var(--ink-soft);font-size:14px;max-width:32ch}.north-star{margin-top:45px;padding:26px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;gap:25px;align-items:center;flex-wrap:wrap}.north-star span{font:10px 'Space Mono',monospace;color:var(--clay);text-transform:uppercase;letter-spacing:.1em}.north-star p{font:22px Fraunces;margin:0}
+.cta{background:var(--indigo);color:var(--paper);text-align:center}.cta h2{font-size:clamp(32px,4vw,52px)}.cta p{color:rgba(249,247,242,.68);max-width:55ch;margin:18px auto 28px}.btn{display:inline-flex;text-decoration:none;font-weight:600;padding:13px 22px;border-radius:2px}.btn-primary{background:var(--gold);color:var(--indigo)}.btn-ghost{border:1px solid rgba(249,247,242,.25);color:var(--paper);margin-left:10px}
+footer{background:var(--indigo);color:rgba(249,247,242,.55);border-top:1px solid rgba(249,247,242,.12);padding:30px 0}.footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:12px}.email{color:var(--gold-soft)}
+@media(max-width:850px){.hero-grid,.intro,.pillar,.pillar:nth-child(even),.horizon-title{grid-template-columns:1fr;gap:30px}.pillar:nth-child(even) .pillar-media{order:0}.chain-row,.targets{grid-template-columns:1fr 1fr}.framework-wheel{height:300px}.pillar-list{grid-template-columns:1fr}}
+@media(max-width:560px){.chain-row,.targets{grid-template-columns:1fr}.nav{padding:10px 20px}.brand{width:150px}.wrap{padding:0 20px}.pillar-list{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="nav"><a class="brand" href="index.html"><img src="bmsp-logo.png" alt="BMsP Africa"></a><a class="back" href="index.html">← Back to BMsP Africa</a></div></header>
+
+<main>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">The BMsP Framework</div>
+      <h1>From <em>potential</em> to impact.</h1>
+      <p>A practical pathway built around four moves: Discover who you are, Develop how you think and what you can do, Create value, then use that value to create Impact.</p>
+    </div>
+    <div class="framework-wheel" aria-label="Discover, Develop, Create, Impact framework">
+      <div class="ring r1"></div><div class="ring r2"></div><div class="core">BMsP<br>AFRICA</div>
+      <div class="wheel-node wn1"><b>01 · DISCOVER</b>Who am I?</div>
+      <div class="wheel-node wn2"><b>02 · DEVELOP</b>What must I become?</div>
+      <div class="wheel-node wn3"><b>03 · CREATE</b>What can I build?</div>
+      <div class="wheel-node wn4"><b>04 · IMPACT</b>How do I benefit others?</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap intro">
+    <div><div class="eyebrow">How it works</div><h2>Develop the person before demanding the performance.</h2></div>
+    <p>The framework starts inward and moves outward. It connects identity and self-awareness to critical thinking, leadership, entrepreneurship, productivity and community transformation.</p>
+  </div>
+</section>
+
+<section class="pillars">
+<div class="wrap">
+  <article class="pillar">
+    <div class="pillar-copy"><div class="num">01 · DISCOVER</div><h2>Unlock the Mind</h2><div class="question">Who am I?</div><p>Build the internal foundation: identity, strengths, emotional intelligence, purpose, values and potential.</p><ul class="pillar-list"><li>Self-awareness</li><li>Identity & values</li><li>Emotional intelligence</li><li>Purpose & potential</li></ul></div>
+    <div class="pillar-media"><img src="https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?auto=format&fit=crop&w=1200&q=80" alt="Participant writing during a self-awareness workshop" loading="lazy"><div class="media-label">Example · Reflection</div></div>
+  </article>
+  <article class="pillar">
+    <div class="pillar-copy"><div class="num">02 · DEVELOP</div><h2>Build the Leader</h2><div class="question">How do I think — and what must I become?</div><p>Develop the thinking, communication and practical capabilities required to make better decisions and lead responsibly.</p><ul class="pillar-list"><li>Critical thinking</li><li>Problem solving</li><li>Leadership & communication</li><li>Digital & financial literacy</li><li>Creativity</li><li>Decision-making</li></ul></div>
+    <div class="pillar-media"><img src="https://images.unsplash.com/photo-1622295023825-6e319464b810?auto=format&fit=crop&w=1200&q=80" alt="Young participant presenting to peers" loading="lazy"><div class="media-label">Example · Leadership practice</div></div>
+  </article>
+  <article class="pillar">
+    <div class="pillar-copy"><div class="num">03 · CREATE</div><h2>Create the Enterprise</h2><div class="question">What can I build?</div><p>Turn ideas into useful products, services and ventures through entrepreneurship, innovation and disciplined execution.</p><ul class="pillar-list"><li>Business ideas</li><li>Entrepreneurship</li><li>Innovation</li><li>Product development</li><li>Business models</li><li>Social & digital enterprise</li></ul></div>
+    <div class="pillar-media"><img src="https://images.unsplash.com/photo-1573164574308-edcb95e8b261?auto=format&fit=crop&w=1200&q=80" alt="Young entrepreneur working on a laptop" loading="lazy"><div class="media-label">Example · Building</div></div>
+  </article>
+  <article class="pillar">
+    <div class="pillar-copy"><div class="num">04 · IMPACT</div><h2>Transform the Community</h2><div class="question">How do I benefit others?</div><p>Move beyond individual success toward jobs, businesses, solutions, initiatives and economic opportunities that benefit others.</p><ul class="pillar-list"><li>Job creation</li><li>Community solutions</li><li>Social innovation</li><li>Leadership initiatives</li><li>Economic opportunities</li></ul></div>
+    <div class="pillar-media"><img src="https://images.unsplash.com/photo-1655720348590-c739c860beed?auto=format&fit=crop&w=1200&q=80" alt="Young Africans collaborating on a community project" loading="lazy"><div class="media-label">Example · Community action</div></div>
+  </article>
+</div>
+</section>
+
+<section class="chain">
+  <div class="wrap">
+    <div class="eyebrow">The transformation logic</div><h2>One move makes the next possible.</h2>
+    <p>Self-awareness creates the foundation. Better thinking creates capability. Capability creates enterprise. Enterprise and leadership create the conditions for wider impact.</p>
+    <div class="chain-row">
+      <div class="chain-step"><span>01</span><h3>Discover</h3><p>Know yourself and your potential.</p></div>
+      <div class="chain-step"><span>02</span><h3>Develop</h3><p>Build the mind, skills and character.</p></div>
+      <div class="chain-step"><span>03</span><h3>Create</h3><p>Turn ideas into value and ventures.</p></div>
+      <div class="chain-step"><span>04</span><h3>Impact</h3><p>Make the value travel outward.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="horizon-section" id="2035">
+<div class="wrap">
+  <div class="horizon-title"><div><div class="eyebrow">2035 Aspirations</div><h2>Build toward the <em>horizon.</em></h2></div><p>These are the targets BMsP AFRICA is organizing its work around: scale human-capital development, support youth-led enterprise, and help expand economic opportunity.</p></div>
+  <div class="targets">
+    <div class="target"><small>01 · Young Africans</small><strong>100K</strong><h3>trained</h3><p>Minds equipped to think, lead, create and contribute.</p></div>
+    <div class="target"><small>02 · Youth-led enterprise</small><strong>5K</strong><h3>supported</h3><p>Enterprises strengthened from idea to sustainable value creation.</p></div>
+    <div class="target"><small>03 · Economic opportunity</small><strong>20K</strong><h3>jobs helped create</h3><p>Opportunity that moves from young people into households and communities.</p></div>
+  </div>
+  <div class="north-star"><span>Our north star</span><p>Train the mind → strengthen the person → build the enterprise → multiply the impact.</p></div>
+</div>
+</section>
+
+<section class="cta"><div class="wrap"><h2>Ready to move from potential to impact?</h2><p>Partner with BMsP AFRICA, support a program, or connect with us about the work in Kebbi State and beyond.</p><a class="btn btn-primary" href="mailto:info.bmspafrica@gmail.com">Email BMsP AFRICA</a><a class="btn btn-ghost" href="index.html#contact">Contact page</a></div></section>
+</main>
+<footer><div class="wrap footer"><span>© 2026 BMsP AFRICA · Aware · Think · Grow · Lead</span><a class="email" href="mailto:info.bmspafrica@gmail.com">info.bmspafrica@gmail.com</a></div></footer>
+</body></html>
