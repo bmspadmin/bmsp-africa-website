@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 850">
+<defs>
+ <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#071a3a"/><stop offset=".58" stop-color="#1f70d8"/><stop offset="1" stop-color="#f4b95f"/></linearGradient>
+ <linearGradient id="land" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#06152f"/><stop offset="1" stop-color="#0b315e"/></linearGradient>
+ <filter id="blur"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+<rect width="1600" height="850" fill="url(#sky)"/>
+<circle cx="1220" cy="300" r="120" fill="#ffd78b" opacity=".7" filter="url(#blur)"/>
+<circle cx="1220" cy="300" r="55" fill="#ffe5a8"/>
+<!-- skyline -->
+<g fill="#102b50" opacity=".85">
+ <path d="M0 680V610h80v70h35v-120h75v120h35v-90h65v90h30V540h90v140h42v-175h78v175h42v-100h62v100h36V570h105v110h45v-140h70v140h42V520h100v160h45v-95h70v95h55V570h95v110h55v-150h80v150h45V540h90v140h55v-80h85v80h90v-60h90v60h50v170H0z"/>
+</g>
+<!-- African continent silhouette, stylized -->
+<path d="M720 130 C670 165 646 220 654 278 C661 330 704 355 712 404 C720 454 699 506 723 548 C746 588 774 631 797 682 C813 716 837 740 865 748 C888 754 898 724 893 694 C887 658 910 626 929 597 C948 568 964 533 963 495 C962 455 944 422 954 388 C965 349 1004 318 1012 279 C1020 238 994 202 960 187 C922 171 889 185 855 167 C817 147 778 105 720 130Z" fill="#0a4ea8" opacity=".92"/>
+<!-- people -->
+<g fill="#fff">
+ <circle cx="500" cy="565" r="25"/><circle cx="575" cy="535" r="25"/><circle cx="650" cy="570" r="25"/><circle cx="725" cy="530" r="25"/>
+</g>
+<g fill="#0a2c58">
+ <path d="M458 680c4-66 22-94 42-94s38 28 42 94z"/><path d="M533 650c4-66 22-94 42-94s38 28 42 94z"/><path d="M608 685c4-66 22-94 42-94s38 28 42 94z"/><path d="M683 645c4-66 22-94 42-94s38 28 42 94z"/>
+</g>
+<g stroke="#fff" stroke-width="4" opacity=".8"><path d="M525 570l25-22 50 22 25-35 50 35"/><path d="M600 548l25 40 50-35"/></g>
+<text x="80" y="125" fill="#fff" font-family="Arial,sans-serif" font-size="25" font-weight="700" letter-spacing="5">WHY AFRICA</text>
+<text x="80" y="190" fill="#fff" font-family="Arial,sans-serif" font-size="54" font-weight="700">Our greatest resource</text>
+<text x="80" y="250" fill="#fff" font-family="Arial,sans-serif" font-size="54" font-weight="700">is its people.</text>
+<text x="80" y="310" fill="#e5f1ff" font-family="Arial,sans-serif" font-size="24">Potential becomes progress when people are equipped</text>
+<text x="80" y="345" fill="#e5f1ff" font-family="Arial,sans-serif" font-size="24">to think, create, lead and build together.</text>
+<rect y="770" width="1600" height="80" fill="#06152f" opacity=".78"/>
+<text x="80" y="820" fill="#fff" font-family="Arial,sans-serif" font-size="19" letter-spacing="3">PEOPLE  •  POTENTIAL  •  CREATIVITY  •  RESILIENCE</text>
+</svg>
