@@ -1,0 +1,45 @@
+:root{--blue:#1677E8;--navy:#0B2A55;--gold:#C89A22;--paper:#F7F6F1;--gray:#E7E7E3;--ink:#0A0A0A}
+*{box-sizing:border-box;margin:0}
+body{font:400 17px/1.65 Poppins,system-ui,sans-serif;color:var(--ink);background:#fff}
+img{max-width:100%;display:block}a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.w{max-width:1120px;margin:auto;padding:0 22px}
+h1,h2,h3{line-height:1.15;color:var(--navy);font-weight:600}
+h1{font-size:clamp(2.1rem,5.2vw,3.6rem);letter-spacing:-.02em}
+h2{font-size:clamp(1.6rem,3.2vw,2.3rem);margin-bottom:14px}
+h3{font-size:1.1rem;margin-bottom:6px}
+p{max-width:62ch}p+p{margin-top:14px}
+section{padding:72px 0}.alt{background:var(--paper)}
+.dark{background:var(--navy);color:#e6eefb}.dark h2,.dark h3{color:#fff}
+header{position:sticky;top:0;background:rgba(255,255,255,.94);border-bottom:1px solid var(--gray);z-index:9}
+.nav{display:flex;align-items:center;justify-content:space-between;min-height:68px;gap:16px}
+.nav img{height:56px}nav{display:flex;gap:22px;align-items:center}
+nav a:not(.btn){color:var(--ink);text-decoration:none;font-size:.95rem;font-weight:500}
+nav a.on{color:var(--blue)}.mb{display:none}
+.btn{display:inline-block;background:var(--blue);color:#fff!important;padding:12px 24px;border-radius:99px;text-decoration:none;font:600 1rem Poppins,sans-serif;border:0;cursor:pointer}
+.btn.g{background:none;color:var(--blue)!important;box-shadow:inset 0 0 0 2px var(--blue)}
+.dark .btn.g{color:#fff!important;box-shadow:inset 0 0 0 2px #fff}
+.row{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:28px}
+.card{background:#fff;border-radius:20px;padding:26px;border:1px solid var(--gray)}.alt .card{border-color:transparent}
+.card small{display:block;color:var(--gold);font-weight:600;margin-bottom:6px}
+.hero,.two{display:grid;gap:40px;grid-template-columns:1.1fr .9fr;align-items:center}.hero{padding:64px 22px}
+.hero p{margin-top:18px;font-size:1.1rem}.two{grid-template-columns:1fr 1fr}
+.circ{position:relative;aspect-ratio:1;max-width:400px;width:100%;margin:auto}
+.circ div{position:absolute;width:58%;aspect-ratio:1;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:600;color:#fff;opacity:.92}
+.c1{top:0;left:0;background:var(--blue);padding:0 28% 28% 0}.c2{top:0;right:0;background:var(--gold);padding:0 0 28% 28%}
+.c3{bottom:0;left:0;background:var(--navy);padding:28% 28% 0 0}.c4{bottom:0;right:0;background:#5AA2F5;padding:28% 0 0 28%}
+.steps{list-style:none;padding:0;counter-reset:s;display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));margin-top:28px}
+.steps li{counter-increment:s;background:#fff;border-radius:20px;padding:22px}
+.steps li:before{content:counter(s);display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--blue);color:#fff;font-weight:600;margin-bottom:10px}
+.chips span{display:inline-block;background:#fff;border:1px solid var(--gray);padding:8px 16px;border-radius:99px;margin:4px 6px 4px 0;font-size:.95rem}
+.stat strong{display:block;font-size:2.6rem;color:var(--gold);line-height:1.1}
+.ph{border-radius:24px;width:100%;max-height:560px;object-fit:cover;object-position:top}
+label{font-weight:500}input,select,textarea{width:100%;padding:12px 14px;border:1px solid #b9b9b3;border-radius:12px;font:inherit;margin:6px 0 16px}
+footer{background:var(--navy);color:#cfdcf2;padding:48px 0 28px;font-size:.95rem}
+footer a{color:#fff}footer .grid{margin-top:0}footer img{height:72px;background:#fff;padding:8px;border-radius:14px;margin-bottom:12px}
+.fine{margin-top:28px;font-size:.85rem;opacity:.8}
+@media(max-width:800px){.hero,.two{grid-template-columns:1fr}.mb{display:block;background:none;border:2px solid var(--blue);border-radius:99px;padding:6px 16px;font:600 .9rem Poppins}
+nav{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;align-items:flex-start;padding:18px 22px;border-bottom:1px solid var(--gray)}
+header.open nav{display:flex}section{padding:52px 0}}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
