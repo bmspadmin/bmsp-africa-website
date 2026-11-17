@@ -94,3 +94,29 @@ footer a{color:#fff;text-decoration:none}footer h3{color:#fff;margin-bottom:8px}
 .mb{display:block;background:none;border:2px solid var(--blue);border-radius:99px;padding:6px 16px;font:600 .9rem Poppins;color:var(--blue)}
 nav{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;align-items:flex-start;padding:18px 24px;border-bottom:1px solid var(--line)}header.open nav{display:flex}}
 @media(max-width:560px){.pils,.sess,.fdesc{grid-template-columns:1fr}.pil{min-height:0}}
+.btn,.pil{transition:background .2s,filter .2s,translate .25s ease}
+.btn:hover{translate:0 -2px}a.pil:hover{translate:0 -6px}
+@media(prefers-reduced-motion:no-preference){
+@keyframes up{from{opacity:0;transform:translateY(24px)}}
+@keyframes gin{from{opacity:0;transform:scale(.92)}}
+@keyframes float{50%{transform:translateY(-10px)}}
+@keyframes bob{50%{transform:translate(-50%,calc(-50% - 7px))}}
+@keyframes drop{from{opacity:0;transform:translateY(-10px)}}
+.hero .w>div:first-child>*{animation:up .8s cubic-bezier(.2,.7,.2,1) both}
+.hero .w>div:first-child>:nth-child(1){animation-delay:.05s}.hero .w>div:first-child>:nth-child(2){animation-delay:.2s}.hero .w>div:first-child>:nth-child(3){animation-delay:.35s}
+.globe{animation:gin 1.4s .15s cubic-bezier(.2,.7,.2,1) both}
+.globe img{animation:float 9s ease-in-out infinite}
+.pill{animation:bob 5s ease-in-out infinite}.pill:nth-of-type(2){animation-delay:-1.3s}.pill:nth-of-type(3){animation-delay:-2.6s}.pill:nth-of-type(4){animation-delay:-3.9s}
+.anim .rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.anim .rv.in{opacity:1;transform:none}
+.anim .pil.rv{opacity:1;transform:none;clip-path:inset(100% 0 0 0);transition:clip-path .9s cubic-bezier(.2,.7,.2,1) var(--d,0s),background .2s,filter .2s,translate .25s ease}
+.anim .pil.rv.in{clip-path:inset(0)}
+.anim .pav.rv{opacity:1;transform:none;clip-path:inset(100% 0 0 0);transition:clip-path 1.8s cubic-bezier(.3,.6,.2,1)}
+.anim .pav.rv.in{clip-path:inset(-40px)}
+.anim .path li:before{transform:scaleX(0);transform-origin:left;transition:transform .7s ease .35s}
+.anim .path li.in:before{transform:none}
+.st[open] .pl{animation:drop .4s ease}
+@media(max-width:960px){.anim .path li:before{transform:scaleY(0);transform-origin:top}.anim .path li.in:before{transform:none}}
+}
+.soonb{display:inline-block;background:var(--gold);color:var(--navy);font:600 .8rem/1 Poppins,sans-serif;padding:7px 14px;border-radius:99px;margin-bottom:14px}
+.pr h3 .soonb{margin:6px 0 0;display:table;font-size:.72rem;padding:6px 12px}
