@@ -4,3 +4,9 @@ hd.innerHTML=`<div class="w nav"><a href="index.html"><img src="bmsp-logo.png" a
 const mb=hd.querySelector('.mb');mb.onclick=()=>mb.setAttribute('aria-expanded',hd.classList.toggle('open'));
 document.getElementById('ft').innerHTML=`<div class="w"><div class="grid"><div><img src="bmsp-logo.png" alt="BMsP Africa"><p>Big Minds for Productivity Africa. Aware, Think, Grow, Lead.</p></div><div><h3>Explore</h3>${P.map(([h,t])=>`<a href="${h}">${t}</a><br>`).join('')}<a href="contact.html">Contact</a></div><div><h3>Contact</h3><a href="tel:+2347063850103">+234 706 385 0103</a><br><a href="tel:+2348028817727">+234 802 881 7727</a><br><a href="mailto:info.bmspafrica@gmail.com">info.bmspafrica@gmail.com</a><br>Kebbi State, Nigeria</div></div><p class="fine">© 2026 BMsP Africa. A youth development organisation. Registration is currently being formalised.</p></div>`;
 const f=document.getElementById('f');if(f)f.onsubmit=e=>{e.preventDefault();const d=new FormData(f);open('https://wa.me/2347063850103?text='+encodeURIComponent(`Hello BMsP Africa, I'm ${d.get('n')} (${d.get('r')}). ${d.get('m')}`),'_blank')};
+const tl=document.querySelector('.tabs');
+if(tl){document.documentElement.classList.add('js');const tabs=[...tl.querySelectorAll('[role=tab]')];
+const show=(t,f)=>{tabs.forEach(b=>{const on=b==t;b.setAttribute('aria-selected',on);b.tabIndex=on?0:-1;document.getElementById(b.getAttribute('aria-controls')).hidden=!on});if(f)t.focus()};
+tabs.forEach((b,i)=>{b.onclick=()=>show(b);b.onkeydown=e=>{const k={ArrowRight:1,ArrowLeft:-1}[e.key];if(k){e.preventDefault();show(tabs[(i+k+tabs.length)%tabs.length],1)}}});
+const go=()=>{const b=tabs.find(b=>b.getAttribute('aria-controls')==location.hash.slice(1));if(b){show(b);document.getElementById('planned').scrollIntoView()}};
+show(tabs[0]);go();addEventListener('hashchange',go)}
